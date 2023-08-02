@@ -131,7 +131,10 @@ nav .menu li:hover>.submenu {
     visibility: visible;
     opacity: 1;
     margin-left: 0px;
-    background-color: rgb(34, 148, 236);
+    background-color: rgb(250, 253, 73);
+}
+nav .menu .submenu li:hover>a{
+    background-color: rgb(21, 9, 90);
 }
 
 nav .menu .submenu .blog {
@@ -157,8 +160,11 @@ nav .menu .submenu .blog a {
 nav .menu .submenu li:hover>.blog {
     visibility: visible;
     opacity: 1;
-    background-color: rgb(250, 253, 73);
+    background-color: rgb(47, 7, 250);
     left: 100%;
+}
+nav .menu .submenu .blog li:hover>a{
+    background-color: rgb(255, 0, 0);
 }
 
 /* NAV BAR ENDS HERE */
