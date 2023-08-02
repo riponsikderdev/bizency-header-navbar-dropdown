@@ -1,95 +1,102 @@
-/* COMMON CSS */
+/* COMMON CSS STARTS HERE */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Ubuntu:wght@300;400;500&display=swap');
-:root{
-    --mainFont: 'Ubuntu', sans-serif;
-    --secondaryFont: 'Abril Fatface', cursive;
-    --thirdFont: 'Open Sans', sans-serif;
-    --primaryColor: #0f2f44;
-    --secondaryColor: #ffc712;
+
+:root {
+    --mainfont: 'Ubuntu', sans-serif;
+    --secondaryfont: 'Abril Fatface', cursive;
+    --thirdfont: 'Open Sans', sans-serif;
+    --primarycolor: #0f2f44;
+    --secondarycolor: #ffc712;
+    --thirdcolor: #8484bf;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-
-ul{
+ul {
     list-style: none;
 }
 
-.container{
+.container {
     width: 1170px;
     margin: auto;
 }
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
-
-.align-center{
+.align-center {
     align-items: center;
 }
 
-body{
-    font-family: var(--mainFont);
+body {
+    font-family: var(--mainfont);
 }
 
-/* COMMON CSS END */
+/* COMMON CSS ENDS HERE */
 
 /* HEADER STARTS HERE */
-header{
-    background-color: var(--primaryColor);
+header {
+    background-color: var(--primarycolor);
     color: white;
-    padding: 19px 0;
+    padding: 20px 0px;
 }
 
-header .welcome{
+header .welcome {
     width: 50%;
 }
-header .opening{
+
+header .opening {
     width: 50%;
     text-align: right;
 }
 
 /* HEADER ENDS HERE */
 
-
-/* nav */
-nav .logo{
+/* NAV BAR STARTS HERE */
+nav .logo {
     width: 40%;
 }
-nav .menu{
+
+nav .menu {
     width: 60%;
     text-align: right;
 }
 
-nav .menu li  {
+nav .menu li {
     display: inline-block;
 }
 
-nav .menu li a{
+nav .menu li a {
     font-size: 16px;
-    color: var(--primaryColor);
+    color: var(--primarycolor);
     font-weight: 500;
-    padding: 40px 19px;
+    padding: 40px 15px;
     display: block;
-    transition: 0.3s ;
+    transition: 0.3s all linear;
 }
 
-/* DIRECT CHILDREN SELECTOR */
-
-nav .menu li:hover > a{
-    color: var(--secondaryColor);
+nav .menu li:hover>a {
+    color: var(--secondarycolor);
     background-color: #fff9e6;
-    
 }
 
+nav .menu .x {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+}
 
 nav .menu .search {
     border-radius: 50%;
@@ -97,53 +104,61 @@ nav .menu .search {
     height: 40px;
     background-color: transparent;
     border: 1px solid #ccc;
-    color: var(--primaryColor);
+    margin: 10px;
 }
 
-nav .menu .submenu{
+nav .menu .submenu {
     position: absolute;
     width: 200px;
     text-align: left;
     border: 1px solid #bbb;
-    opacity: 0;
     visibility: hidden;
-    /* 
-    *   EASE
-    * EASE IN
-    * EASE OUT
-    * EASE IN-OUT
-    * LINEAR
-    * ANIMATION TIMING FUNCTION
-    */
-    transition: 0.3s ease ;
-    margin-top: 80px;
+    opacity: 0;
+    transition: 0.3s all linear;
+    margin-left: 100px;
 }
 
-
-
-
-nav .menu .submenu li{
+nav .menu .submenu li {
     display: block;
     border-bottom: 1px solid #bbb;
 }
-nav .menu .submenu a{
+
+nav .menu .submenu a {
     padding: 15px 20px;
 }
 
-
-nav .menu li:hover > .submenu{
+nav .menu li:hover>.submenu {
+    visibility: visible;
     opacity: 1;
-     visibility: visible;
-     margin-top: 0;
-    
+    margin-left: 0px;
+    background-color: rgb(34, 148, 236);
 }
 
+nav .menu .submenu .blog {
+    width: 200px;
+    text-align: left;
+    border: 1px solid #bbb;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all linear;
+    left: 200%;
+    position: absolute;
+}
 
-/* nav ends */
+nav .menu .submenu .blog li {
+    display: block;
+    border-bottom: 1px solid #bbb;
+}
 
+nav .menu .submenu .blog a {
+    padding: 15px 20px;
+}
 
-/* .box{
-    width: 100%;
-    height: 500px;
-    background-color: red;
-} */
+nav .menu .submenu li:hover>.blog {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgb(250, 253, 73);
+    left: 100%;
+}
+
+/* NAV BAR ENDS HERE */
