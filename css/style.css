@@ -121,6 +121,7 @@ nav .menu .submenu {
 nav .menu .submenu li {
     display: block;
     border-bottom: 1px solid #bbb;
+    position: relative;
 }
 
 nav .menu .submenu a {
@@ -162,6 +163,7 @@ nav .menu .submenu li:hover>.blog {
     opacity: 1;
     background-color: rgb(47, 7, 250);
     left: 100%;
+    top: 0;
 }
 nav .menu .submenu .blog li:hover>a{
     background-color: rgb(255, 0, 0);
